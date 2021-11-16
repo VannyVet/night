@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submit your profile</title>
+</head>
+<body>
+    <form action="/my-backend/profile " method="POST">
+       <table width="100%" cellspacing="20px"  cellpadding="0px"> 
+           <tr>
+               <td colspan="2">
+                   <h1>Tell about yourself</h1>
+               </td>
+           </tr>
+           <tr>
+               <td colspan="2">
+                <h4>Profile Information </h4>
+               </td>   
+           </tr>
+           <tr>
+               <td>
+                   <div>Last Name</div>
+                   <input type="text" style="width: 100%;">
+               </td>
+               <td>
+                   <div>First Name</div>
+                   <input type="text" style="width:100%">
+               </td>
+           </tr>
+           <tr>
+               <td colspan="2">
+                   <span>Gender</span>
+                    <input  name="gender" type="radio" value="male">Male
+                    <input name="gender" type="radio" value="female">Femal
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   <h4>Current Address</h4>
+                   <select name="city" id="">
+                       <option value=""disabled selected>Province/city</option>
+                       <option value="Phonm Penh">Phonm Penh</option>
+                       <option value="Battambang">Battambang</option>
+                       <option value="Simreap">Simreap</option>
+                       
+                   </select>
+               </td>
+               <td>
+                   <select name="City" id="">
+                       <option value=""disabled selected> City</option>
+                       <option value="Cambodia">Cambodia</option>
+                       <option value="Thailand">Thailand</option>
+                       <option value="Vitname">Vitnam</option>
+                       <option value="Laos">Laos</option>
+                   </select>
+
+               </td>
+               <tr>
+                   <td>
+                     <input   type="text" placeholder="Post Code">
+                   </td>
+               </tr>
+           </tr>
+           
+       </table>
+    </form>
+</body>
+</html>
